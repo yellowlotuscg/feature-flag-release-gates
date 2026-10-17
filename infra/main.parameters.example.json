@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": { "value": "eastus" },
+    "appName": { "value": "pricing-api-example" },
+    "environmentName": { "value": "pricing-env-example" },
+    "appConfigName": { "value": "pricing-config-example" },
+    "logAnalyticsName": { "value": "pricing-logs-example" },
+    "containerImage": { "value": "ghcr.io/YOUR_GITHUB_ORG/feature-flag-release-gates/pricing-api:latest" },
+    "githubOrg": { "value": "YOUR_GITHUB_ORG" },
+    "githubRepo": { "value": "feature-flag-release-gates" },
+    "githubEnvironment": { "value": "production" }
+  }
+}

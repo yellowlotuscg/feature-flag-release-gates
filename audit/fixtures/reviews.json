@@ -1,0 +1,4 @@
+[
+  {"pull_number": 42, "state": "APPROVED", "user": {"login": "reviewer"}, "submitted_at": "2026-10-17T11:30:00Z"},
+  {"pull_number": 42, "state": "COMMENTED", "user": {"login": "author"}, "submitted_at": "2026-10-17T11:00:00Z"}
+]
