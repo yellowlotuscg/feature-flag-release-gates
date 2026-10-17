@@ -39,9 +39,10 @@ jobs:
       - uses: open-policy-agent/setup-opa@v2
         with:
           version: latest
-      - uses: instrumenta/conftest-action@master
-        with:
-          version: 0.56.0
+      - name: Install conftest
+        run: |
+          curl -sSL https://github.com/open-policy-agent/conftest/releases/download/v0.56.0/conftest_0.56.0_Linux_x86_64.tar.gz | tar xz -C /usr/local/bin conftest
+          conftest --version
       - run: opa test policy -v --ignore '*.json'
       - run: conftest verify --policy policy
       - run: conftest test policy/testdata/good.json --policy policy --namespace releasegates
@@ -85,9 +86,10 @@ jobs:
         with:
           python-version: '3.11'
       - run: sudo apt-get update && sudo apt-get install -y jq
-      - uses: instrumenta/conftest-action@master
-        with:
-          version: 0.56.0
+      - name: Install conftest
+        run: |
+          curl -sSL https://github.com/open-policy-agent/conftest/releases/download/v0.56.0/conftest_0.56.0_Linux_x86_64.tar.gz | tar xz -C /usr/local/bin conftest
+          conftest --version
       - name: Build live PR metadata
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
