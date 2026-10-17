@@ -1,0 +1,19 @@
+{
+  "pull_request": {
+    "author_login": "author",
+    "base_ref": "main",
+    "merge_queue": true,
+    "labels": ["release-gate"],
+    "changed_files": ["src/PricingApi/Program.cs", "tests/PricingApi.Tests/QuoteEndpointTests.cs"]
+  },
+  "codeowners": ["yellowlotuscg", "reviewer"],
+  "reviews": [
+    {"user_login": "reviewer", "state": "APPROVED"}
+  ],
+  "required_checks": ["build-test", "policy", "gitleaks"],
+  "checks": [
+    {"name": "build-test", "conclusion": "success"},
+    {"name": "policy", "conclusion": "success"},
+    {"name": "gitleaks", "conclusion": "success"}
+  ]
+}

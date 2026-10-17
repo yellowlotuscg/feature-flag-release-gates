@@ -1,0 +1,15 @@
+bin/
+obj/
+**/bin/
+**/obj/
+.vscode/
+.idea/
+.env
+*.user
+*.suo
+coverage/
+TestResults/
+pr-metadata.json
+audit/report.md
+audit/report.csv
+.DS_Store

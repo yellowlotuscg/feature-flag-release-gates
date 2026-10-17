@@ -1,0 +1,17 @@
+{
+  "pull_request": {
+    "author_login": "author",
+    "base_ref": "develop",
+    "merge_queue": false,
+    "labels": [],
+    "changed_files": ["src/PricingApi/Program.cs"]
+  },
+  "codeowners": ["reviewer"],
+  "reviews": [
+    {"user_login": "author", "state": "APPROVED"}
+  ],
+  "required_checks": ["build-test"],
+  "checks": [
+    {"name": "build-test", "conclusion": "failure"}
+  ]
+}

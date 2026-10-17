@@ -1,0 +1,9 @@
+[
+  {
+    "pull_number": 42,
+    "environment": "production",
+    "approvals": [
+      {"approver": "release-manager", "approved_at": "2026-10-17T12:15:00Z"}
+    ]
+  }
+]

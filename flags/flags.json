@@ -1,0 +1,25 @@
+{
+  "features": {
+    "VolumeDiscounts": {
+      "defaultState": "Disabled",
+      "filters": {
+        "targeting": {
+          "groups": ["internal"],
+          "defaultRolloutPercentage": 10
+        }
+      }
+    },
+    "RegionalTax": {
+      "defaultState": "Disabled",
+      "filters": {
+        "targeting": {
+          "groups": ["internal"],
+          "defaultRolloutPercentage": 10
+        }
+      }
+    },
+    "KillSwitch": {
+      "defaultState": "Disabled"
+    }
+  }
+}
